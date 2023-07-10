@@ -89,7 +89,7 @@
                         <td>{{$alternatif->efektivitas / $C2max['alternatif']}}</td>
                         <td>{{$C3min['alternatif'] / $alternatif->harga}}</td>
                         <td>{{$alternatif->dosis / $C4max['alternatif']}}</td>
-                        <td>{{$alternatif->ketersediaan / $C5max['alternatif']}}</td>
+                        <td>{{$alternatif->ketersediaan / $C5 max['alternatif']}}</td>
                     </tr>
                 @endforeach
                 </tbody>

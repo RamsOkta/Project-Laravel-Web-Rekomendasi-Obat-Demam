@@ -20,12 +20,6 @@ class AlternatifController extends Controller
     }
     public function edit($id){
         
-        // $alternatif = Alternatif::where('id', $id)->first();
-
-        // return view('editalternatif', [
-        //     'alternatif' => $alternatif,
-        //     'title' => 'Edit Data alternatif'
-        // ]);
         return view('editalternatif')->with([
             'alternatif' => Alternatif::find($id),
         ]);

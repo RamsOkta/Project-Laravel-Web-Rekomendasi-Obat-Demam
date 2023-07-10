@@ -24,23 +24,6 @@ Route::get('/page', function () {
     return view('page');
 });
 
-Route::get('/tanaman', function () {
-    return view('tanaman');
-});
-
-Route::get('/tanimodern', function () {
-    return view('tanimodern');
-});
-
-Route::get('/pupuk', function () {
-    return view('pupuk');
-});
-
-
-Route::get('/datapetani', function () {
-    return view('datapetani');
-});
-
 use App\Http\Controllers\KriteriaController;
 Route::controller(KriteriaController::class)->group(function() {
     Route::get('kriteria/', 'index');
